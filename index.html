@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guess The Word</title>
-  <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-  <h1>The is the word guessing game</h1>
-<script src="./assets//js/index.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Word</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="large-font">Guess The Word</div>
+      <button class='start-button'>Start</button>
+    </header>
+
+    <main>
+      <section>
+        <div class=' card word-guess'>
+          <div class="large-font word-blanks">P_t_o_</div>
+        </div>
+      </section>
+      <!-- Section to show the results -->
+      <section>
+        <div class=" card results">
+          <div class="win-loss-container"
+>
+            <div>
+              <h2>Wins: <span class='win'>0</span></h2>
+              <h2>Losses: <span class='lose'>0</span></h2>
+            </div>
+            <button class='reset-button'>Reset Score</button>
+          </div>
+          <!-- Show timer -->
+          <div  class="card timer">
+            <div class='timer-text'>
+              <div class="large-font timer-count">10</div>
+              <h3>seconds remaining</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./assets//js/index.js"></script>
+  </body>
 </html>

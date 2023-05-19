@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+/* body styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+  background: linear-gradient(12deg, rgb(156, 207, 138) 0%, rgb(97, 173, 210) 63%);
+}
+/* header styling */
+header {
+  padding: 40px;
+  text-align: center;
+  background-color: burlywood;
+  color: #832e2e;
+  border-bottom: 10px solid rgb(156, 207, 138);
+}
+
+/* button Styling  */
+button {
+  background: radial-gradient(circle, rgba(240, 230, 140, 1) 0%, rgba(33, 105, 187, 0.954) 100%);
+  border-radius: 8px;
+  color: #1b1f1d;
+  cursor: pointer;
+  font-size: 2rem;
+  letter-spacing: 0.21px;
+  line-height: 16px;
+  max-width: 255px;
+  padding: 20px 52px;
+  text-align: center;
+  transition-duration: 0.15s;
+  transition-property: background-color;
+  transition-timing-function: linear;
+  margin-top: 0.6em;
+}
+/* main Styling */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+/* section styling */
+section {
+  flex: 0 auto;
+  padding: 8px;
+  margin-top: 50px;
+  background-color: white;
+  border-radius: 8px;
+}
+/* Style reset button */
+.reset-button {
+  font-size: 16px;
+  height: 30px;
+  line-height: 8px;
+  margin-top: 20px;
+}
+
+/* styling for the result board */
+.win-loss-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+/* styling for the result board */
+.results {
+  width: 30vw;
+  height: 400px;
+}
+/* card styling */
+.card {
+  background: radial-gradient(circle, rgba(240,230,140,1) 0%, rgba(187,124,33,0.604079131652661) 100%);
+  border: 1px solid #eceff1;
+  border-radius: 8px;
+  box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0,
+    rgba(60, 64, 67, 0.15) 0 2px 4px 3px;
+  margin: auto;
+  padding: 20px;
+}
+
+
+.word-guess {
+  width: 55vw;
+  height: 400px;
+}
+
+/* styling for the word board */
+.word-blanks {
+  line-height: 360px;
+}
+.large-font {
+  font-size: 3.5em;
+  text-align:center;
+}
+.timer {
+  height: 240px;
+  padding: 10px;
+  background: #13293d;
+  color: #fff;
+  text-align: center;
+}
+.timer-text {
+  padding: 55px;
+}
+/* Add media queries */
+@media screen and (max-width: 504px) {
+  .large-font {
+    font-size: 2em;
+  }
+
+  .reset-button {
+    font-size: 12px;
+    width: 20ox;
+
+  }
+
+  .timer {
+    height: 200px;
+  }
+}
+/* break */
+
+@media screen and (max-width: 1183px) {
+  main {
+    flex-direction: column;
+  }
+
+  .word-guess,
+  .results {
+    width: 90vw;
+  }
+
+  section {
+    background-color: white;
+    margin: 20px auto;
+    width: 92vw;
+  }
+}
